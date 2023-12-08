@@ -2,18 +2,20 @@
 User-Management-FullStack using Spring Boot and React Library
 
 # Required softwares for Frontend
-Node js
+>Node js
 
 Check is node intalled in your system using below commands:
 
-node -v
-npm -v
+$ node -v
+
+$ npm -v
 # Required softwares for Backend
-Java (Jdk)
-MySql
+> Java (Jdk)
+
+> MySql
 
 # Clone the repository using below command:
-git clone https://github.com/Shailendra-Vishwakarma/User-Management-FullStack.git
+> git clone https://github.com/Shailendra-Vishwakarma/User-Management-FullStack.git
 
 # How to run Frontend application
 1. > Open frontend module in your any favourite  editor. (Suggestion use - Visual Studio Code )
@@ -38,9 +40,9 @@ git clone https://github.com/Shailendra-Vishwakarma/User-Management-FullStack.gi
         "email": "test@gmail.com"
         }
 6. > Test Health and Metrics of your application using 
-    Health: http://localhost:8080/actuators/health
-    Info: http://localhost:8080/actuators/info
-    Metrics: http://localhost:8080/actuators/metrics
+   > Health: http://localhost:8080/actuators/health
+   > Info: http://localhost:8080/actuators/info
+   > Metrics: http://localhost:8080/actuators/metrics
     
 
 

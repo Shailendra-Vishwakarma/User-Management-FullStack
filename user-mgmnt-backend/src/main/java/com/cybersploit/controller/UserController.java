@@ -40,9 +40,10 @@ public class UserController {
     User updateUser(@RequestBody User newUser, @PathVariable Long id) {
         return userRepository.findById(id)
                 .map(user -> {
-                    user.setUsername(newUser.getUsername());
                     user.setName(newUser.getName());
+                    user.setCity(newUser.getCity());
                     user.setEmail(newUser.getEmail());
+                    user.setOccupation(newUser.getOccupation());
                     return userRepository.save(user);
                 }).orElseThrow(() -> new UserNotFoundException(id));
     }

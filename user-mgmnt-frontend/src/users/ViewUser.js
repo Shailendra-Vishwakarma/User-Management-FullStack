@@ -5,8 +5,9 @@ import { Link, useParams } from "react-router-dom";
 export default function ViewUser() {
   const [user, setUser] = useState({
     name: "",
-    username: "",
+    city: "",
     email: "",
+    occupation: "",
   });
 
   const { id } = useParams();
@@ -35,12 +36,16 @@ export default function ViewUser() {
                   {user.name}
                 </li>
                 <li className="list-group-item">
-                  <b>UserName:</b>
-                  {user.username}
+                  <b>City:</b>
+                  {user.city}
                 </li>
                 <li className="list-group-item">
                   <b>Email:</b>
                   {user.email}
+                </li>
+                <li className="list-group-item">
+                  <b>Occupation:</b>
+                  {user.occupation}
                 </li>
               </ul>
             </div>

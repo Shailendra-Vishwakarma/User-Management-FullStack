@@ -29,8 +29,9 @@ export default function Home() {
             <tr>
               <th scope="col">S.N</th>
               <th scope="col">Name</th>
-              <th scope="col">Username</th>
+              <th scope="col">City</th>
               <th scope="col">Email</th>
+              <th scope="col">Occupation</th>
               <th scope="col">Action</th>
             </tr>
           </thead>
@@ -41,8 +42,9 @@ export default function Home() {
                   {index + 1}
                 </th>
                 <td>{user.name}</td>
-                <td>{user.username}</td>
+                <td>{user.city}</td>
                 <td>{user.email}</td>
+                <td>{user.occupation}</td>
                 <td>
                   <Link
                     className="btn btn-primary mx-2"

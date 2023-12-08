@@ -11,9 +11,10 @@ public class User {
     @Id
     @GeneratedValue
     private Long id;
-    private String username;
     private String name;
+    private String city;
     private String email;
+    private String occupation;
 
     public Long getId() {
         return id;
@@ -21,14 +22,6 @@ public class User {
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
     }
 
     public String getName() {
@@ -39,11 +32,26 @@ public class User {
         this.name = name;
     }
 
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String name) {
+        this.city = name;
+    }
+
     public String getEmail() {
         return email;
     }
 
     public void setEmail(String email) {
         this.email = email;
+    }
+    public String getOccupation() {
+        return occupation;
+    }
+
+    public void setOccupation(String occupation) {
+        this.occupation = occupation;
     }
 }

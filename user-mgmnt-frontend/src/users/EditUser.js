@@ -9,11 +9,12 @@ export default function EditUser() {
 
   const [user, setUser] = useState({
     name: "",
-    username: "",
+    city: "",
     email: "",
+    occupation: "",
   });
 
-  const { name, username, email } = user;
+  const { name, city, email, occupation} = user;
 
   const onInputChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
@@ -51,19 +52,21 @@ export default function EditUser() {
                 placeholder="Enter your name"
                 name="name"
                 value={name}
+                required
                 onChange={(e) => onInputChange(e)}
               />
             </div>
             <div className="mb-3">
-              <label htmlFor="Username" className="form-label">
-                Username
+              <label htmlFor="City" className="form-label">
+                City
               </label>
               <input
                 type={"text"}
                 className="form-control"
                 placeholder="Enter your username"
-                name="username"
-                value={username}
+                name="city"
+                value={city}
+                required
                 onChange={(e) => onInputChange(e)}
               />
             </div>
@@ -77,6 +80,22 @@ export default function EditUser() {
                 placeholder="Enter your e-mail address"
                 name="email"
                 value={email}
+                required
+                pattern="[^ @]*@[^ @]*"
+                onChange={(e) => onInputChange(e)}
+              />
+            </div>
+            <div className="mb-3">
+              <label htmlFor="Occupation" className="form-label">
+                Occupation
+              </label>
+              <input
+                type={"text"}
+                className="form-control"
+                placeholder="Enter your occupation"
+                name="occupation"
+                value={occupation}
+                required
                 onChange={(e) => onInputChange(e)}
               />
             </div>

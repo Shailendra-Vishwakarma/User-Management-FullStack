@@ -6,9 +6,9 @@ User-Management-FullStack using Spring Boot and React Library
 
 Check is node intalled in your system using below commands:
 
-$ node -v
+> node -v
 
-$ npm -v
+> npm -v
 # Required softwares for Backend
 > Java (Jdk)
 

@@ -33,16 +33,18 @@ Check is node intalled in your system using below commands:
 5. > If you want to test your API's using PostMan:
     - Get Rquest : http://localhost:8080/users (Retreive all user)
     - Get Rquest : http://localhost:8080/users/{id} (Retreive user by id where id=1)
-    - POST Request : http://localhost:8080/user 
+    - POST Request : http://localhost:8080/user
+    >  
         {
         "username": "Test",
         "name": "test",
         "email": "test@gmail.com"
         }
-6. > Test Health and Metrics of your application using 
-   > Health: http://localhost:8080/actuators/health
-   > Info: http://localhost:8080/actuators/info
-   > Metrics: http://localhost:8080/actuators/metrics
+6. > Test Health and Metrics of your application using
+   
+   - Health: http://localhost:8080/actuators/health
+   - Info: http://localhost:8080/actuators/info
+   - Metrics: http://localhost:8080/actuators/metrics
     
 
 
